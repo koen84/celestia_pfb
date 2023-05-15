@@ -1,0 +1,20 @@
+extends default
+
+block content
+  div.container
+
+  script(src="../js/AddNetKeplr.js")
+
+  .card-body
+    b Address
+    #address
+    form(name="sendForm")
+      .form-group
+        label(for="namespace_id") Namespace ID 
+        input(name="namespace_id",value="0c204d39600fddd3")
+      .form-group
+        label(for="data") Data 
+        input(name="data",value="f1f20ca8007e910a3bf8b2e61da0f26bca07ef78717a6ea54165f5",size=54)
+      button(type="submit") Submit
+
+  script(src="../js/SendPFB.js")
